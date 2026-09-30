@@ -1,0 +1,469 @@
+{
+  "data": [
+    {
+      "enterpriseNumber": "0202.239.951",
+      "status": "AC",
+      "juridicalSituation": "000",
+      "typeOfEnterprise": 2,
+      "juridicalForm": 114,
+      "startDate": "1930-07-19T00:00:00.000Z",
+      "establishments": [
+        {
+          "establishmentNumber": "2.102.964.255",
+          "startDate": "1995-01-11T00:00:00.000Z",
+          "denominations": [
+            {
+              "language": 2,
+              "typeOfDenomination": "003",
+              "denomination": "Proximus",
+              "languageDescription": {
+                "FR": "néerlandais",
+                "NL": "Nederlands"
+              },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            }
+          ],
+          "contacts": [],
+          "addresses": [
+            {
+              "typeOfAddress": "BAET",
+              "zipcode": "1210",
+              "municipalityNL": "Sint-Joost-ten-Node",
+              "municipalityFR": "Saint-Josse-ten-Noode",
+              "streetNL": "Vooruitgangstraat",
+              "streetFR": "Rue du Progrès",
+              "houseNumber": "55",
+              "typeOfAddressDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "activities": [
+            {
+              "activityGroup": "006",
+              "naceVersion": "2025",
+              "naceCode": "61100",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Activités de télécommunications filaires, sans fil et satellitaires",
+                "NL": "Draadgebonden en draadloze telecommunicatie en telecommunicatie via satelliet"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2003",
+              "naceCode": "64200",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Télécommunications",
+                "NL": "Telecommunicatie"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2008",
+              "naceCode": "61100",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Télécommunications filaires",
+                "NL": "Draadgebonden telecommunicatie"
+              }
+            }
+          ]
+        },
+        {
+          "establishmentNumber": "2.102.964.651",
+          "startDate": "1998-01-27T00:00:00.000Z",
+          "denominations": [
+            {
+              "language": 2,
+              "typeOfDenomination": "003",
+              "denomination": "Proximus",
+              "languageDescription": {
+                "FR": "néerlandais",
+                "NL": "Nederlands"
+              },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            }
+          ],
+          "contacts": [],
+          "addresses": [
+            {
+              "typeOfAddress": "BAET",
+              "zipcode": "1070",
+              "municipalityNL": "Anderlecht",
+              "municipalityFR": "Anderlecht",
+              "streetNL": "Sylvain Dupuislaan",
+              "streetFR": "Boulevard Sylvain Dupuis",
+              "houseNumber": "433",
+              "typeOfAddressDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "activities": [
+            {
+              "activityGroup": "006",
+              "naceVersion": "2025",
+              "naceCode": "61100",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Activités de télécommunications filaires, sans fil et satellitaires",
+                "NL": "Draadgebonden en draadloze telecommunicatie en telecommunicatie via satelliet"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2003",
+              "naceCode": "64200",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Télécommunications",
+                "NL": "Telecommunicatie"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2008",
+              "naceCode": "61100",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Télécommunications filaires",
+                "NL": "Draadgebonden telecommunicatie"
+              }
+            }
+          ]
+        }
+      ],
+      "denominations": [
+        {
+          "language": 1,
+          "typeOfDenomination": "001",
+          "denomination": "PROXIMUS",
+          "languageDescription": {
+            "FR": "français",
+            "NL": "Frans"
+          },
+          "typeOfDenominationDescription": {
+            "FR": "Dénomination",
+            "NL": "Naam"
+          }
+        },
+        {
+          "language": 2,
+          "typeOfDenomination": "001",
+          "denomination": "PROXIMUS",
+          "languageDescription": {
+            "FR": "néerlandais",
+            "NL": "Nederlands"
+          },
+          "typeOfDenominationDescription": {
+            "FR": "Dénomination",
+            "NL": "Naam"
+          }
+        }
+      ],
+      "contacts": [
+        {
+          "entityContact": "ENT",
+          "contactType": "TEL",
+          "value": "022024111",
+          "contactTypeDescription": {
+            "FR": "Numéro de téléphone",
+            "NL": "Telefoonnummer"
+          },
+          "entityContactDescription": {
+            "FR": "Entreprise",
+            "NL": "Onderneming"
+          }
+        },
+        {
+          "entityContact": "ENT",
+          "contactType": "WEB",
+          "value": "www.proximus.com",
+          "contactTypeDescription": {
+            "FR": "Adresse web",
+            "NL": "Webadres"
+          },
+          "entityContactDescription": {
+            "FR": "Entreprise",
+            "NL": "Onderneming"
+          }
+        }
+      ],
+      "addresses": [
+        {
+          "typeOfAddress": "REGO",
+          "zipcode": "1030",
+          "municipalityNL": "Schaarbeek",
+          "municipalityFR": "Schaerbeek",
+          "streetNL": "Koning AlbertII laan",
+          "streetFR": "Boulevard du Roi AlbertII",
+          "houseNumber": "27",
+          "typeOfAddressDescription": {
+            "FR": "Siège",
+            "NL": "Zetel"
+          }
+        }
+      ],
+      "activities": [
+        {
+          "activityGroup": "006",
+          "naceVersion": "2025",
+          "naceCode": "61100",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités ONSS",
+            "NL": "RSZ-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Activités de télécommunications filaires, sans fil et satellitaires",
+            "NL": "Draadgebonden en draadloze telecommunicatie en telecommunicatie via satelliet"
+          }
+        },
+        {
+          "activityGroup": "006",
+          "naceVersion": "2003",
+          "naceCode": "64200",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités ONSS",
+            "NL": "RSZ-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Télécommunications",
+            "NL": "Telecommunicatie"
+          }
+        },
+        {
+          "activityGroup": "001",
+          "naceVersion": "2003",
+          "naceCode": "64200",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités TVA",
+            "NL": "BTW-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Télécommunications",
+            "NL": "Telecommunicatie"
+          }
+        }
+      ],
+      "statusDescription": {
+        "FR": "Actif",
+        "NL": "Actief"
+      },
+      "juridicalSituationDescription": {
+        "DE": "gewöhnlicher Zustand",
+        "FR": "Situation normale",
+        "NL": "Normale toestand"
+      },
+      "typeOfEnterpriseDescription": {
+        "FR": "Personne morale",
+        "NL": "Rechtspersoon"
+      },
+      "juridicalFormDescription": {
+        "DE": "Öffentlich-rechtliche Aktiengesellschaft",
+        "FR": "Société anonyme de droit public",
+        "NL": "Naamloze vennootschap van publiek recht"
+      }
+    },
+    {
+      "enterpriseNumber": "0422.986.613",
+      "status": "AC",
+      "juridicalSituation": "000",
+      "typeOfEnterprise": 2,
+      "juridicalForm": 30,
+      "startDate": "1982-09-10T00:00:00.000Z",
+      "establishments": [],
+      "denominations": [
+        {
+          "language": 0,
+          "typeOfDenomination": "001",
+          "denomination": "PROXIMUS LUXEMBOURG SA",
+          "languageDescription": {
+            "FR": "inconnu",
+            "NL": "Onbekend"
+          },
+          "typeOfDenominationDescription": {
+            "FR": "Dénomination",
+            "NL": "Naam"
+          }
+        }
+      ],
+      "contacts": [],
+      "addresses": [
+        {
+          "typeOfAddress": "REGO",
+          "countryNL": "Luxemburg (Groot-Hertogdom)",
+          "countryFR": "Luxembourg (Grand-Duché)",
+          "zipcode": "8070",
+          "municipalityNL": "Bertrange",
+          "municipalityFR": "Bertrange",
+          "streetNL": "Rue du Puits Romain",
+          "streetFR": "Rue du Puits Romain",
+          "houseNumber": "18",
+          "typeOfAddressDescription": {
+            "FR": "Siège",
+            "NL": "Zetel"
+          }
+        }
+      ],
+      "activities": [
+        {
+          "activityGroup": "006",
+          "naceVersion": "2025",
+          "naceCode": "61100",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités ONSS",
+            "NL": "RSZ-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Activités de télécommunications filaires, sans fil et satellitaires",
+            "NL": "Draadgebonden en draadloze telecommunicatie en telecommunicatie via satelliet"
+          }
+        },
+        {
+          "activityGroup": "001",
+          "naceVersion": "2025",
+          "naceCode": "46500",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités TVA",
+            "NL": "BTW-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Commerce de gros d’équipements de l’information et de la communication",
+            "NL": "Groothandel in informatie- en communicatieapparatuur"
+          }
+        },
+        {
+          "activityGroup": "001",
+          "naceVersion": "2003",
+          "naceCode": "51850",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités TVA",
+            "NL": "BTW-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Commerce de gros d'autres machines et équipements de bureau",
+            "NL": "Groothandel in overige kantoormachines en kantoorbenodigdheden"
+          }
+        }
+      ],
+      "statusDescription": {
+        "FR": "Actif",
+        "NL": "Actief"
+      },
+      "juridicalSituationDescription": {
+        "DE": "gewöhnlicher Zustand",
+        "FR": "Situation normale",
+        "NL": "Normale toestand"
+      },
+      "typeOfEnterpriseDescription": {
+        "FR": "Personne morale",
+        "NL": "Rechtspersoon"
+      },
+      "juridicalFormDescription": {
+        "DE": "Ausländische Einheit",
+        "FR": "Entité étrangère",
+        "NL": "Buitenlandse entiteit"
+      }
+    }
+  ],
+  "meta": {
+    "source": "CBE",
+    "dataUpdatedAt": "2026-09-29",
+    "creditsUsed": 2,
+    "creditsRemaining": 21,
+    "creditsLimit": 50,
+    "creditsResetAt": "2026-10-01T00:00:00.000Z",
+    "total": 20,
+    "limit": 2,
+    "offset": 0,
+    "hasNext": true
+  }
+}

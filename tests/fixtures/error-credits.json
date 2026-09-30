@@ -1,0 +1,12 @@
+{
+  "errorCode": "QUOTA_EXHAUSTED",
+  "message": "Your quota limit is reached — upgrade your plan at https://www.cbe2json.be/dashboard/subscription",
+  "meta": {
+    "source": "CBE",
+    "dataUpdatedAt": "2026-09-29",
+    "creditsUsed": 0,
+    "creditsRemaining": 0,
+    "creditsLimit": 50,
+    "creditsResetAt": "2026-10-01T00:00:00.000Z"
+  }
+}

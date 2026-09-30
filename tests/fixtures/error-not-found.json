@@ -1,0 +1,12 @@
+{
+  "errorCode": "ENTERPRISE_NOT_FOUND",
+  "message": "Enterprise not found",
+  "meta": {
+    "source": "CBE",
+    "dataUpdatedAt": "2026-09-29",
+    "creditsUsed": 0,
+    "creditsRemaining": 21,
+    "creditsLimit": 50,
+    "creditsResetAt": "2026-10-01T00:00:00.000Z"
+  }
+}

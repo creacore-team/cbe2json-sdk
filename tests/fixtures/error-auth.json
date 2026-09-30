@@ -1,0 +1,4 @@
+{
+  "errorCode": "BAD_CLIENT_SECRET",
+  "message": "Billing plan not found for client: 0000000000000000 or wrong clientId/secretId"
+}
