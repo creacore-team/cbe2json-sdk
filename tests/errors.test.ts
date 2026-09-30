@@ -106,6 +106,50 @@ describe('errorFromResponse', () => {
   })
 })
 
+describe('error names', () => {
+  const cases: Array<[string, () => CBE2JSONError, object]> = [
+    ['CBE2JSONError', () => new CBE2JSONError('x'), CBE2JSONError],
+    [
+      'AuthenticationError',
+      () => new AuthenticationError('x'),
+      AuthenticationError,
+    ],
+    ['ValidationError', () => new ValidationError('x'), ValidationError],
+    ['NotFoundError', () => new NotFoundError('x'), NotFoundError],
+    [
+      'CreditsExhaustedError',
+      () => new CreditsExhaustedError('x'),
+      CreditsExhaustedError,
+    ],
+    ['TimeoutError', () => new TimeoutError(10), TimeoutError],
+    [
+      'ConnectionError',
+      () => new ConnectionError(new Error('x')),
+      ConnectionError,
+    ],
+    ['ApiError', () => new ApiError('x'), ApiError],
+  ]
+
+  it.each(cases)('%s has the right name', (expected, make) => {
+    expect(make().name).toBe(expected)
+  })
+
+  it('name survives the constructor being renamed, as by a minifier', () => {
+    for (const [expected, make, Class] of cases) {
+      const original = Object.getOwnPropertyDescriptor(Class, 'name')
+      Object.defineProperty(Class, 'name', {
+        value: 'mangled',
+        configurable: true,
+      })
+      try {
+        expect(make().name).toBe(expected)
+      } finally {
+        if (original) Object.defineProperty(Class, 'name', original)
+      }
+    }
+  })
+})
+
 describe('network errors', () => {
   it('TimeoutError names the timeout', () => {
     const error = new TimeoutError(250)

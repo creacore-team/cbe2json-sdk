@@ -21,7 +21,9 @@ export class CBE2JSONError extends Error {
       message,
       fields.cause === undefined ? undefined : { cause: fields.cause },
     )
-    this.name = new.target.name
+    // A literal, not `new.target.name`: class names can be renamed by a
+    // minifier, but a string literal always survives.
+    this.name = 'CBE2JSONError'
     this.status = fields.status
     this.code = fields.code
     this.meta = fields.meta
@@ -29,13 +31,28 @@ export class CBE2JSONError extends Error {
 }
 
 /** The clientId / secretKey pair was refused. */
-export class AuthenticationError extends CBE2JSONError {}
+export class AuthenticationError extends CBE2JSONError {
+  constructor(message: string, fields: ErrorFields = {}) {
+    super(message, fields)
+    this.name = 'AuthenticationError'
+  }
+}
 
 /** The request was refused as invalid (e.g. a malformed number, limit > 100). */
-export class ValidationError extends CBE2JSONError {}
+export class ValidationError extends CBE2JSONError {
+  constructor(message: string, fields: ErrorFields = {}) {
+    super(message, fields)
+    this.name = 'ValidationError'
+  }
+}
 
 /** No company has this enterprise number. No credit was used. */
-export class NotFoundError extends CBE2JSONError {}
+export class NotFoundError extends CBE2JSONError {
+  constructor(message: string, fields: ErrorFields = {}) {
+    super(message, fields)
+    this.name = 'NotFoundError'
+  }
+}
 
 /** Not enough credits left this month. Nothing was charged. */
 export class CreditsExhaustedError extends CBE2JSONError {
@@ -48,6 +65,7 @@ export class CreditsExhaustedError extends CBE2JSONError {
 
   constructor(message: string, fields: ErrorFields = {}) {
     super(message, fields)
+    this.name = 'CreditsExhaustedError'
     this.limit = fields.meta?.creditsLimit ?? null
     this.remaining = fields.meta?.creditsRemaining ?? null
     this.resetAt = fields.meta?.creditsResetAt ?? null
@@ -58,6 +76,7 @@ export class CreditsExhaustedError extends CBE2JSONError {
 export class TimeoutError extends CBE2JSONError {
   constructor(timeout: number) {
     super(`The CBE2JSON API did not answer within ${timeout} ms`)
+    this.name = 'TimeoutError'
   }
 }
 
@@ -65,11 +84,17 @@ export class TimeoutError extends CBE2JSONError {
 export class ConnectionError extends CBE2JSONError {
   constructor(cause: unknown) {
     super('Could not reach the CBE2JSON API', { cause })
+    this.name = 'ConnectionError'
   }
 }
 
 /** Any other answer: server errors, unknown codes, unreadable bodies. */
-export class ApiError extends CBE2JSONError {}
+export class ApiError extends CBE2JSONError {
+  constructor(message: string, fields: ErrorFields = {}) {
+    super(message, fields)
+    this.name = 'ApiError'
+  }
+}
 
 function isObject(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value)
