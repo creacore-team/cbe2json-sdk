@@ -4,6 +4,7 @@ import {
   ApiError,
   AuthenticationError,
   CBE2JSON,
+  ConnectionError,
   CreditsExhaustedError,
   NotFoundError,
   TimeoutError,
@@ -130,6 +131,20 @@ describe('the secret key never leaks through errors', () => {
       .get('0202.239.951')
       .catch((e) => e)
     expect(error).toBeInstanceOf(TimeoutError)
+    expect(inspect(error, { depth: 10, showHidden: true })).not.toContain(
+      CREDS.secretKey,
+    )
+  })
+
+  it('connection error', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockRejectedValue(new TypeError('fetch failed')),
+    )
+    const error = await cbe()
+      .companies.get('0202.239.951')
+      .catch((e) => e)
+    expect(error).toBeInstanceOf(ConnectionError)
     expect(inspect(error, { depth: 10, showHidden: true })).not.toContain(
       CREDS.secretKey,
     )
