@@ -53,6 +53,9 @@ export async function post<T>(
         secretKey: config.secretKey,
         data,
       }),
+      // Never follow a redirect: it would re-send the body (with the
+      // secret key) to whatever host the redirect points to.
+      redirect: 'error',
       signal: AbortSignal.timeout(config.timeout),
     })
   } catch (error) {

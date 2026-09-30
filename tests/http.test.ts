@@ -37,6 +37,7 @@ describe('post', () => {
       'User-Agent': `cbe2json-sdk-js/${VERSION} node/${process.versions.node}`,
     })
     expect(request.signal).toBeInstanceOf(AbortSignal)
+    expect(request.redirect).toBe('error')
   })
 
   it('returns the { data, meta } body unchanged', async () => {

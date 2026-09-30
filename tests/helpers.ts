@@ -41,5 +41,6 @@ export function sentRequest(fn: ReturnType<typeof mockFetch>) {
     headers: init?.headers as Record<string, string>,
     body: JSON.parse(String(init?.body)) as Record<string, unknown>,
     signal: init?.signal,
+    redirect: init?.redirect,
   }
 }
