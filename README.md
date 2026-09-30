@@ -126,6 +126,8 @@ All extend `CBE2JSONError`, with `status`, `code` (the API's error code) and, wh
 The SDK does not retry. A lookup that timed out may still have been served and charged, so retry deliberately:
 
 ```ts
+import { ConnectionError, TimeoutError } from '@cbe2json/sdk'
+
 async function getWithRetry(number: string) {
   try {
     return await cbe.companies.get(number)
@@ -144,8 +146,8 @@ async function getWithRetry(number: string) {
 new CBE2JSON({
   clientId,
   secretKey,
-  baseUrl: 'https://api.cbe2json.be', // default
-  timeout: 10_000, // milliseconds, default
+  baseUrl: 'https://api.cbe2json.be', // default; must be https (http allowed only on localhost)
+  timeout: 10_000, // milliseconds, default; a positive whole number
 })
 ```
 
