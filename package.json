@@ -27,6 +27,9 @@
   },
   "license": "MIT",
   "author": "Creacore",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
