@@ -1,0 +1,73 @@
+{
+  "name": "@cbe2json/sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript and JavaScript SDK for CBE2JSON — Belgian CBE, BCE and KBO company data.",
+  "keywords": [
+    "belgium",
+    "belgian-company",
+    "company-data",
+    "company-registry",
+    "kbo",
+    "bce",
+    "cbe",
+    "kbo-api",
+    "bce-api",
+    "cbe-api",
+    "belgium-api",
+    "typescript",
+    "sdk"
+  ],
+  "homepage": "https://www.cbe2json.be/sdk/javascript?utm_source=npm&utm_medium=sdk&utm_campaign=javascript_sdk",
+  "bugs": {
+    "url": "https://github.com/creacore-team/cbe2json-sdk/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creacore-team/cbe2json-sdk.git"
+  },
+  "license": "MIT",
+  "author": "Creacore",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:live": "vitest run --config vitest.live.config.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0 && prettier --check .",
+    "format": "prettier --write .",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.3",
+    "eslint": "^10.11.0",
+    "prettier": "^3.9.9",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.0",
+    "vitest": "^5.0.3"
+  }
+}
