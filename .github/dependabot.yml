@@ -15,6 +15,10 @@ updates:
       # vitest 5 drops Node 20, which this package still supports.
       - dependency-name: 'vitest'
         update-types: ['version-update:semver-major']
+      # Types stay on the oldest supported Node.js, so the typecheck rejects
+      # APIs that Node 20 lacks.
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
   - package-ecosystem: github-actions
     directory: /
     schedule:
