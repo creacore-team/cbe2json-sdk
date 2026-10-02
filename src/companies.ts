@@ -1,9 +1,27 @@
 import { post, type HttpConfig } from './http'
 import type {
+  CompanyFindNumbersParams,
+  CompanyFindParams,
+  CompanyFindResult,
+  CompanyNumbersResult,
   CompanyResult,
   CompanySearchParams,
   CompanySearchResult,
 } from './types'
+
+// The API validates the filters; this only drops undefined values so they
+// are not sent, and refuses a missing params object early.
+function filtersBody(
+  params: object | undefined,
+  method: string,
+): Record<string, unknown> {
+  if (params === null || typeof params !== 'object') {
+    throw new TypeError(`CBE2JSON: ${method} needs filters`)
+  }
+  return Object.fromEntries(
+    Object.entries(params).filter(([, value]) => value !== undefined),
+  )
+}
 
 /** Company lookups: `cbe.companies`. */
 export class Companies {
@@ -40,5 +58,32 @@ export class Companies {
     if (params.limit !== undefined) data.limit = params.limit
     if (params.offset !== undefined) data.offset = params.offset
     return post<CompanySearchResult>(this.#config, 'byDenomination', data)
+  }
+
+  /**
+   * Companies by activity (NACE), postcode, municipality, street and house
+   * number, name, legal form or legal situation.
+   * Uses 1 credit per company returned; an empty result costs nothing.
+   */
+  async find(params: CompanyFindParams): Promise<CompanyFindResult> {
+    return post<CompanyFindResult>(
+      this.#config,
+      'search',
+      filtersBody(params, 'find'),
+    )
+  }
+
+  /**
+   * Same filters as find; returns enterprise numbers only, up to 1000 per
+   * page. Uses 1 credit per page with results.
+   */
+  async findNumbers(
+    params: CompanyFindNumbersParams,
+  ): Promise<CompanyNumbersResult> {
+    return post<CompanyNumbersResult>(
+      this.#config,
+      'search/numbers',
+      filtersBody(params, 'findNumbers'),
+    )
   }
 }

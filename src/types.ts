@@ -98,6 +98,8 @@ export interface SearchMeta extends ResponseMeta {
   limit: number
   offset: number
   hasNext: boolean
+  /** True when there are more than 10000 matches; total is then 10000. */
+  totalCapped?: boolean
 }
 
 export interface CompanyResult {
@@ -117,6 +119,65 @@ export interface CompanySearchParams {
   limit?: number
   /** 0 or more; default 0. */
   offset?: number
+}
+
+/**
+ * Filters for find / findNumbers. Give at least one of nace, zipcode,
+ * municipality, street or name. NACE and address filters must match the
+ * same unit: the registered office or one establishment.
+ */
+export interface CompanyFilters {
+  /** NACE code prefix (2 to 7 digits, dots allowed), or up to 10. */
+  nace?: string | string[]
+  /** Code list the NACE codes refer to; the API's default is 2025. */
+  naceVersion?: 2008 | 2025
+  /** Belgian postcode (4 digits), or up to 20. */
+  zipcode?: string | string[]
+  /** Dutch or French name; case and accents are ignored. */
+  municipality?: string
+  /** Dutch or French name; needs zipcode or municipality. Natural persons are left out when street or houseNumber is used. */
+  street?: string
+  /** Needs street. */
+  houseNumber?: string
+  /** Company or establishment name (or part of it). */
+  name?: string
+  /** Legal form codes. */
+  juridicalForm?: number[]
+  /** Legal situation codes. */
+  juridicalSituation?: string[]
+  /** 0 or more; offset + limit must not exceed 10000. */
+  offset?: number
+}
+
+export interface CompanyFindParams extends CompanyFilters {
+  /** 1 to 100; the API's default is 10. */
+  limit?: number
+}
+
+export interface CompanyFindNumbersParams extends CompanyFilters {
+  /** 1 to 1000; the API's default is 100. */
+  limit?: number
+}
+
+/** Which units met the NACE and address filters. */
+export interface CompanyMatch {
+  registeredOffice: boolean
+  establishments: string[]
+}
+
+export interface FoundCompany extends Company {
+  match: CompanyMatch
+}
+
+export interface CompanyFindResult {
+  data: FoundCompany[]
+  meta: SearchMeta
+}
+
+export interface CompanyNumbersResult {
+  /** Enterprise numbers, dotted form. */
+  data: string[]
+  meta: SearchMeta
 }
 
 export interface CBE2JSONOptions {
