@@ -1,0 +1,1194 @@
+{
+  "data": [
+    {
+      "enterpriseNumber": "0308.357.951",
+      "status": "AC",
+      "juridicalSituation": "000",
+      "typeOfEnterprise": 2,
+      "juridicalForm": 301,
+      "startDate": "1968-01-01T00:00:00.000Z",
+      "establishments": [
+        {
+          "establishmentNumber": "2.146.810.136",
+          "startDate": "2003-07-01T00:00:00.000Z",
+          "denominations": [
+            {
+              "language": 2,
+              "typeOfDenomination": "003",
+              "denomination": "FOD Kanselarij van de Eerste Minister",
+              "languageDescription": {
+                "FR": "néerlandais",
+                "NL": "Nederlands"
+              },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            },
+            {
+              "language": 1,
+              "typeOfDenomination": "003",
+              "denomination": "SPF Chancellerie du Premier Ministre",
+              "languageDescription": { "FR": "français", "NL": "Frans" },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            }
+          ],
+          "contacts": [
+            {
+              "entityContact": "EST",
+              "contactType": "TEL",
+              "value": "+3225010211",
+              "contactTypeDescription": {
+                "FR": "Numéro de téléphone",
+                "NL": "Telefoonnummer"
+              },
+              "entityContactDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            },
+            {
+              "entityContact": "EST",
+              "contactType": "WEB",
+              "value": "chancellerie.belgium.be",
+              "contactTypeDescription": {
+                "FR": "Adresse web",
+                "NL": "Webadres"
+              },
+              "entityContactDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "addresses": [
+            {
+              "typeOfAddress": "BAET",
+              "zipcode": "1000",
+              "municipalityNL": "Brussel",
+              "municipalityFR": "Bruxelles",
+              "streetNL": "Wetstraat",
+              "streetFR": "Rue de la Loi",
+              "houseNumber": "16",
+              "typeOfAddressDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "activities": [
+            {
+              "activityGroup": "006",
+              "naceVersion": "2003",
+              "naceCode": "75111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration centrale",
+                "NL": "Centrale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2003",
+              "naceCode": "75111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration centrale",
+                "NL": "Centrale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            }
+          ]
+        },
+        {
+          "establishmentNumber": "2.181.774.973",
+          "startDate": "2003-07-01T00:00:00.000Z",
+          "denominations": [
+            {
+              "language": 1,
+              "typeOfDenomination": "003",
+              "denomination": "Centre de Presse international",
+              "languageDescription": { "FR": "français", "NL": "Frans" },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            },
+            {
+              "language": 2,
+              "typeOfDenomination": "003",
+              "denomination": "Internationaal Perscentrum (IPC)",
+              "languageDescription": {
+                "FR": "néerlandais",
+                "NL": "Nederlands"
+              },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            }
+          ],
+          "contacts": [],
+          "addresses": [
+            {
+              "typeOfAddress": "BAET",
+              "zipcode": "1040",
+              "municipalityNL": "Brussel",
+              "municipalityFR": "Bruxelles",
+              "streetNL": "Wetstraat",
+              "streetFR": "Rue de la Loi",
+              "houseNumber": "155",
+              "extraAddressInfo": "Residence Palace",
+              "typeOfAddressDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "activities": [
+            {
+              "activityGroup": "006",
+              "naceVersion": "2003",
+              "naceCode": "75111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration centrale",
+                "NL": "Centrale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            }
+          ]
+        },
+        {
+          "establishmentNumber": "2.181.776.458",
+          "startDate": "2003-07-01T00:00:00.000Z",
+          "denominations": [
+            {
+              "language": 1,
+              "typeOfDenomination": "003",
+              "denomination": "Hôtel particulier du Premier Ministre",
+              "languageDescription": { "FR": "français", "NL": "Frans" },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            },
+            {
+              "language": 2,
+              "typeOfDenomination": "003",
+              "denomination": "Ambtswoning van de Eerste Minister",
+              "languageDescription": {
+                "FR": "néerlandais",
+                "NL": "Nederlands"
+              },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            }
+          ],
+          "contacts": [],
+          "addresses": [
+            {
+              "typeOfAddress": "BAET",
+              "zipcode": "1000",
+              "municipalityNL": "Brussel",
+              "municipalityFR": "Bruxelles",
+              "streetNL": "Lambermontstraat",
+              "streetFR": "Rue Lambermont",
+              "houseNumber": "1",
+              "typeOfAddressDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "activities": [
+            {
+              "activityGroup": "006",
+              "naceVersion": "2003",
+              "naceCode": "75111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration centrale",
+                "NL": "Centrale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            }
+          ]
+        },
+        {
+          "establishmentNumber": "2.194.904.320",
+          "startDate": "2003-07-01T00:00:00.000Z",
+          "denominations": [
+            {
+              "language": 1,
+              "typeOfDenomination": "003",
+              "denomination": "Cellule stratégique du Premier ministre",
+              "languageDescription": { "FR": "français", "NL": "Frans" },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            },
+            {
+              "language": 2,
+              "typeOfDenomination": "003",
+              "denomination": "Beleidscel van de eerste minister",
+              "languageDescription": {
+                "FR": "néerlandais",
+                "NL": "Nederlands"
+              },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            }
+          ],
+          "contacts": [
+            {
+              "entityContact": "EST",
+              "contactType": "EMAIL",
+              "value": "contact@premier.be",
+              "contactTypeDescription": {
+                "FR": "Adresse e-mail",
+                "NL": "E-mailadres"
+              },
+              "entityContactDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            },
+            {
+              "entityContact": "EST",
+              "contactType": "WEB",
+              "value": "www.premier.be",
+              "contactTypeDescription": {
+                "FR": "Adresse web",
+                "NL": "Webadres"
+              },
+              "entityContactDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "addresses": [
+            {
+              "typeOfAddress": "BAET",
+              "zipcode": "1000",
+              "municipalityNL": "Brussel",
+              "municipalityFR": "Bruxelles",
+              "streetNL": "Wetstraat",
+              "streetFR": "Rue de la Loi",
+              "houseNumber": "16",
+              "box": "2",
+              "extraAddressInfo": "Bart De Wever",
+              "typeOfAddressDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "activities": [
+            {
+              "activityGroup": "006",
+              "naceVersion": "2003",
+              "naceCode": "75111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration centrale",
+                "NL": "Centrale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2003",
+              "naceCode": "75111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration centrale",
+                "NL": "Centrale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            }
+          ]
+        },
+        {
+          "establishmentNumber": "2.200.258.324",
+          "startDate": "1998-12-23T00:00:00.000Z",
+          "denominations": [
+            {
+              "language": 2,
+              "typeOfDenomination": "003",
+              "denomination": "Federaal Instituut voor Duurzame Ontwikkeling (FIDO) - Vaste Nationale Cultuurpactcommissie",
+              "languageDescription": {
+                "FR": "néerlandais",
+                "NL": "Nederlands"
+              },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            },
+            {
+              "language": 1,
+              "typeOfDenomination": "003",
+              "denomination": "Institut fédéral pour le Développement durable (IFDD) - Commission nationale permanente du Pacte culturel",
+              "languageDescription": { "FR": "français", "NL": "Frans" },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            }
+          ],
+          "contacts": [
+            {
+              "entityContact": "EST",
+              "contactType": "WEB",
+              "value": "www.simplification.be",
+              "contactTypeDescription": {
+                "FR": "Adresse web",
+                "NL": "Webadres"
+              },
+              "entityContactDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "addresses": [
+            {
+              "typeOfAddress": "BAET",
+              "zipcode": "1000",
+              "municipalityNL": "Brussel",
+              "municipalityFR": "Bruxelles",
+              "streetNL": "Hertogsstraat",
+              "streetFR": "Rue Ducale",
+              "houseNumber": "4",
+              "typeOfAddressDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "activities": [
+            {
+              "activityGroup": "006",
+              "naceVersion": "2003",
+              "naceCode": "75111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration centrale",
+                "NL": "Centrale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2003",
+              "naceCode": "75111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration centrale",
+                "NL": "Centrale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            }
+          ]
+        },
+        {
+          "establishmentNumber": "2.316.533.907",
+          "startDate": "2021-05-03T00:00:00.000Z",
+          "denominations": [
+            {
+              "language": 2,
+              "typeOfDenomination": "003",
+              "denomination": "Centrum voor cybersecurity of Belgie",
+              "languageDescription": {
+                "FR": "néerlandais",
+                "NL": "Nederlands"
+              },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            },
+            {
+              "language": 1,
+              "typeOfDenomination": "003",
+              "denomination": "Centre pour la cybersecurité de Belgique",
+              "languageDescription": { "FR": "français", "NL": "Frans" },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            }
+          ],
+          "contacts": [],
+          "addresses": [
+            {
+              "typeOfAddress": "BAET",
+              "zipcode": "1000",
+              "municipalityNL": "Brussel",
+              "municipalityFR": "Bruxelles",
+              "streetNL": "Wetstraat",
+              "streetFR": "Rue de la Loi",
+              "houseNumber": "18",
+              "typeOfAddressDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "activities": [
+            {
+              "activityGroup": "006",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "006",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités ONSS",
+                "NL": "RSZ-activiteiten"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            }
+          ]
+        },
+        {
+          "establishmentNumber": "2.385.438.252",
+          "startDate": "2022-06-15T00:00:00.000Z",
+          "denominations": [
+            {
+              "language": 1,
+              "typeOfDenomination": "003",
+              "denomination": "Centre pour la Cybersécurité Belgique",
+              "languageDescription": { "FR": "français", "NL": "Frans" },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            },
+            {
+              "language": 2,
+              "typeOfDenomination": "003",
+              "denomination": "Centrum voor Cybersecurity Belgie",
+              "languageDescription": {
+                "FR": "néerlandais",
+                "NL": "Nederlands"
+              },
+              "typeOfDenominationDescription": {
+                "FR": "Dénomination commerciale",
+                "NL": "Commerciële naam"
+              }
+            }
+          ],
+          "contacts": [],
+          "addresses": [
+            {
+              "typeOfAddress": "BAET",
+              "zipcode": "1060",
+              "municipalityNL": "Sint-Gillis (bij-Brussel)",
+              "municipalityFR": "Saint-Gilles",
+              "streetNL": "Ernest Blerotstraat",
+              "streetFR": "Rue Ernest Blerot",
+              "houseNumber": "1",
+              "typeOfAddressDescription": {
+                "FR": "Unité d'établissement",
+                "NL": "Vestigingseenheid"
+              }
+            }
+          ],
+          "activities": [
+            {
+              "activityGroup": "004",
+              "naceVersion": "2025",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            },
+            {
+              "activityGroup": "004",
+              "naceVersion": "2008",
+              "naceCode": "84111",
+              "classification": "MAIN",
+              "activityGroupDescription": {
+                "FR": "Activités de la fonction publique fédérale",
+                "NL": "Activiteiten federaal openbaar ambt"
+              },
+              "classificationDescription": {
+                "FR": "Activité principale",
+                "NL": "Hoofdactiviteit"
+              },
+              "naceCodeDescription": {
+                "FR": "Administration publique fédérale",
+                "NL": "Federale overheid"
+              }
+            }
+          ]
+        }
+      ],
+      "denominations": [
+        {
+          "language": 1,
+          "typeOfDenomination": "001",
+          "denomination": "Service Public Fédéral Chancellerie du Premier Ministre",
+          "languageDescription": { "FR": "français", "NL": "Frans" },
+          "typeOfDenominationDescription": {
+            "FR": "Dénomination",
+            "NL": "Naam"
+          }
+        },
+        {
+          "language": 1,
+          "typeOfDenomination": "002",
+          "denomination": "PREMIER",
+          "languageDescription": { "FR": "français", "NL": "Frans" },
+          "typeOfDenominationDescription": {
+            "FR": "Abréviation",
+            "NL": "Afkorting"
+          }
+        },
+        {
+          "language": 2,
+          "typeOfDenomination": "001",
+          "denomination": "Federale Overheidsdienst Kanselarij van de Eerste Minister",
+          "languageDescription": { "FR": "néerlandais", "NL": "Nederlands" },
+          "typeOfDenominationDescription": {
+            "FR": "Dénomination",
+            "NL": "Naam"
+          }
+        },
+        {
+          "language": 2,
+          "typeOfDenomination": "002",
+          "denomination": "PREMIER",
+          "languageDescription": { "FR": "néerlandais", "NL": "Nederlands" },
+          "typeOfDenominationDescription": {
+            "FR": "Abréviation",
+            "NL": "Afkorting"
+          }
+        },
+        {
+          "language": 3,
+          "typeOfDenomination": "001",
+          "denomination": "Föderaler öffentlicher Dienst Kanzlei des Premierministers",
+          "languageDescription": { "FR": "allemand", "NL": "Duits" },
+          "typeOfDenominationDescription": {
+            "FR": "Dénomination",
+            "NL": "Naam"
+          }
+        },
+        {
+          "language": 3,
+          "typeOfDenomination": "002",
+          "denomination": "FöD Premierminister",
+          "languageDescription": { "FR": "allemand", "NL": "Duits" },
+          "typeOfDenominationDescription": {
+            "FR": "Abréviation",
+            "NL": "Afkorting"
+          }
+        }
+      ],
+      "contacts": [
+        {
+          "entityContact": "ENT",
+          "contactType": "TEL",
+          "value": "+3225010211",
+          "contactTypeDescription": {
+            "FR": "Numéro de téléphone",
+            "NL": "Telefoonnummer"
+          },
+          "entityContactDescription": {
+            "FR": "Entreprise",
+            "NL": "Onderneming"
+          }
+        },
+        {
+          "entityContact": "ENT",
+          "contactType": "WEB",
+          "value": "chancellerie.belgium.be",
+          "contactTypeDescription": { "FR": "Adresse web", "NL": "Webadres" },
+          "entityContactDescription": {
+            "FR": "Entreprise",
+            "NL": "Onderneming"
+          }
+        }
+      ],
+      "addresses": [
+        {
+          "typeOfAddress": "REGO",
+          "zipcode": "1000",
+          "municipalityNL": "Brussel",
+          "municipalityFR": "Bruxelles",
+          "streetNL": "Wetstraat",
+          "streetFR": "Rue de la Loi",
+          "houseNumber": "16",
+          "typeOfAddressDescription": { "FR": "Siège", "NL": "Zetel" }
+        }
+      ],
+      "activities": [
+        {
+          "activityGroup": "006",
+          "naceVersion": "2003",
+          "naceCode": "75111",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités ONSS",
+            "NL": "RSZ-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Administration centrale",
+            "NL": "Centrale overheid"
+          }
+        },
+        {
+          "activityGroup": "006",
+          "naceVersion": "2025",
+          "naceCode": "84111",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités ONSS",
+            "NL": "RSZ-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Administration publique fédérale",
+            "NL": "Federale overheid"
+          }
+        },
+        {
+          "activityGroup": "001",
+          "naceVersion": "2025",
+          "naceCode": "84111",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités TVA",
+            "NL": "BTW-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Administration publique fédérale",
+            "NL": "Federale overheid"
+          }
+        },
+        {
+          "activityGroup": "001",
+          "naceVersion": "2003",
+          "naceCode": "75111",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités TVA",
+            "NL": "BTW-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Administration centrale",
+            "NL": "Centrale overheid"
+          }
+        },
+        {
+          "activityGroup": "006",
+          "naceVersion": "2008",
+          "naceCode": "84111",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités ONSS",
+            "NL": "RSZ-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Administration publique fédérale",
+            "NL": "Federale overheid"
+          }
+        },
+        {
+          "activityGroup": "001",
+          "naceVersion": "2008",
+          "naceCode": "84111",
+          "classification": "MAIN",
+          "activityGroupDescription": {
+            "FR": "Activités TVA",
+            "NL": "BTW-activiteiten"
+          },
+          "classificationDescription": {
+            "FR": "Activité principale",
+            "NL": "Hoofdactiviteit"
+          },
+          "naceCodeDescription": {
+            "FR": "Administration publique fédérale",
+            "NL": "Federale overheid"
+          }
+        }
+      ],
+      "statusDescription": { "FR": "Actif", "NL": "Actief" },
+      "juridicalSituationDescription": {
+        "DE": "gewöhnlicher Zustand",
+        "FR": "Situation normale",
+        "NL": "Normale toestand"
+      },
+      "typeOfEnterpriseDescription": {
+        "FR": "Personne morale",
+        "NL": "Rechtspersoon"
+      },
+      "juridicalFormDescription": {
+        "DE": "Föderaler öffentlicher Dienst",
+        "FR": "Service public fédéral",
+        "NL": "Federale overheidsdienst"
+      },
+      "match": {
+        "registeredOffice": true,
+        "establishments": ["2.146.810.136", "2.194.904.320"]
+      }
+    }
+  ],
+  "meta": {
+    "source": "CBE",
+    "dataUpdatedAt": "2026-10-01",
+    "creditsUsed": 1,
+    "creditsRemaining": 2979,
+    "creditsLimit": 5000,
+    "creditsResetAt": "2026-09-12T19:35:47.000Z",
+    "total": 2,
+    "limit": 1,
+    "offset": 0,
+    "hasNext": true
+  }
+}

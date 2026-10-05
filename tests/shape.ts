@@ -2,9 +2,11 @@ import type {
   Activity,
   Address,
   Company,
+  CompanyMatch,
   Contact,
   Denomination,
   Establishment,
+  FoundCompany,
   ResponseMeta,
   SearchMeta,
 } from '../src/types'
@@ -18,11 +20,14 @@ type Rule =
   | 'number'
   | 'number?'
   | 'boolean'
+  | 'boolean?'
   | 'string|null'
   | 'number|null'
   | 'description?'
+  | 'string[]'
   | { literal: string }
   | { array: Spec }
+  | { object: Spec }
 export type Spec = { readonly [key: string]: Rule }
 
 const DENOMINATION = {
@@ -109,7 +114,18 @@ export const SEARCH_META = {
   limit: 'number',
   offset: 'number',
   hasNext: 'boolean',
+  totalCapped: 'boolean?',
 } satisfies Record<keyof SearchMeta, Rule>
+
+const MATCH = {
+  registeredOffice: 'boolean',
+  establishments: 'string[]',
+} satisfies Record<keyof CompanyMatch, Rule>
+
+export const FOUND_COMPANY = {
+  ...COMPANY,
+  match: { object: MATCH },
+} satisfies Record<keyof FoundCompany, Rule>
 
 const DESCRIPTION_LANGUAGES = ['FR', 'NL', 'DE']
 
@@ -138,8 +154,19 @@ function checkRule(value: unknown, rule: Rule, path: string): void {
       if (value !== rule.literal) fail(path, `expected "${rule.literal}"`)
       return
     }
+    if ('object' in rule) {
+      expectShape(value, rule.object, path)
+      return
+    }
     if (!Array.isArray(value)) fail(path, 'expected an array')
     value.forEach((item, i) => expectShape(item, rule.array, `${path}[${i}]`))
+    return
+  }
+  if (rule === 'string[]') {
+    if (!Array.isArray(value)) fail(path, 'expected an array')
+    value.forEach((item, i) => {
+      if (typeof item !== 'string') fail(`${path}[${i}]`, 'expected string')
+    })
     return
   }
   const optional = rule.endsWith('?')

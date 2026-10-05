@@ -1,6 +1,6 @@
 {
   "name": "@cbe2json/sdk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Official TypeScript and JavaScript SDK for CBE2JSON — Belgian CBE, BCE and KBO company data.",
   "keywords": [
     "belgium",

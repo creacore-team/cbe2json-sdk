@@ -1,0 +1,21 @@
+{
+  "data": [
+    "0203.071.973",
+    "0206.653.946",
+    "0206.732.437",
+    "0206.732.932",
+    "0206.737.484"
+  ],
+  "meta": {
+    "source": "CBE",
+    "dataUpdatedAt": "2026-10-01",
+    "creditsUsed": 1,
+    "creditsRemaining": 2978,
+    "creditsLimit": 5000,
+    "creditsResetAt": "2026-09-12T19:35:47.000Z",
+    "total": 322,
+    "limit": 5,
+    "offset": 0,
+    "hasNext": true
+  }
+}

@@ -97,6 +97,70 @@ describe('companies.search', () => {
   })
 })
 
+describe('companies.find', () => {
+  it('posts the filters to search and returns { data, meta } with match', async () => {
+    const body = fixture('find-companies')
+    const fetchMock = mockFetch(200, body)
+    const result = await cbe().companies.find({
+      zipcode: '1000',
+      street: 'Rue de la Loi',
+      houseNumber: '16',
+      limit: 1,
+    })
+    expect(sentRequest(fetchMock).url).toBe('https://api.cbe2json.be/search')
+    expect(sentRequest(fetchMock).body.data).toEqual({
+      zipcode: '1000',
+      street: 'Rue de la Loi',
+      houseNumber: '16',
+      limit: 1,
+    })
+    expect(result).toEqual(body)
+    expect(typeof result.data[0].match.registeredOffice).toBe('boolean')
+  })
+
+  it('leaves out filters that are undefined', async () => {
+    const fetchMock = mockFetch(200, fixture('find-companies'))
+    await cbe().companies.find({ nace: ['62.01'], zipcode: undefined })
+    expect(sentRequest(fetchMock).body.data).toEqual({ nace: ['62.01'] })
+  })
+
+  it('rejects a call without filters before calling the API', async () => {
+    const fetchMock = mockFetch(200, fixture('find-companies'))
+    await expect(cbe().companies.find(undefined as never)).rejects.toThrow(
+      new TypeError('CBE2JSON: find needs filters'),
+    )
+    expect(fetchMock).not.toHaveBeenCalled()
+  })
+
+  it('surfaces a missing main filter as ValidationError', async () => {
+    mockFetch(400, {
+      errorCode: 'VALIDATION_FAILED',
+      message:
+        'Give at least one of nace, zipcode, municipality, street or name',
+    })
+    await expect(
+      cbe().companies.find({ juridicalForm: [14] }),
+    ).rejects.toBeInstanceOf(ValidationError)
+  })
+})
+
+describe('companies.findNumbers', () => {
+  it('posts to search/numbers and returns enterprise numbers', async () => {
+    const body = fixture('find-numbers')
+    const fetchMock = mockFetch(200, body)
+    const result = await cbe().companies.findNumbers({
+      zipcode: '1000',
+      nace: '84',
+      limit: 5,
+    })
+    expect(sentRequest(fetchMock).url).toBe(
+      'https://api.cbe2json.be/search/numbers',
+    )
+    expect(result).toEqual(body)
+    for (const n of result.data) expect(n).toMatch(/^\d{4}\.\d{3}\.\d{3}$/)
+  })
+})
+
 describe('the secret key never leaks through errors', () => {
   it.each([
     [401, 'error-auth', AuthenticationError],

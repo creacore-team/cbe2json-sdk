@@ -1,6 +1,12 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { COMPANY, RESPONSE_META, SEARCH_META, expectShape } from './shape'
+import {
+  COMPANY,
+  FOUND_COMPANY,
+  RESPONSE_META,
+  SEARCH_META,
+  expectShape,
+} from './shape'
 
 function load(name: string): { data: unknown; meta: unknown } {
   return JSON.parse(
@@ -27,6 +33,22 @@ describe('recorded API responses match the SDK types', () => {
   it('search-empty', () => {
     const { data, meta } = load('search-empty')
     expect(data).toEqual([])
+    expectShape(meta, SEARCH_META, 'meta')
+  })
+
+  it('find-companies', () => {
+    const { data, meta } = load('find-companies')
+    expect(Array.isArray(data)).toBe(true)
+    ;(data as unknown[]).forEach((c, i) =>
+      expectShape(c, FOUND_COMPANY, `data[${i}]`),
+    )
+    expectShape(meta, SEARCH_META, 'meta')
+  })
+
+  it('find-numbers', () => {
+    const { data, meta } = load('find-numbers')
+    expect(Array.isArray(data)).toBe(true)
+    ;(data as unknown[]).forEach((n) => expect(typeof n).toBe('string'))
     expectShape(meta, SEARCH_META, 'meta')
   })
 

@@ -79,6 +79,32 @@ console.log(`${meta.total} matches`, meta.hasNext)
 
 Search looks at company and establishment names. No match returns an empty list.
 
+## Find companies
+
+Look companies up by activity (NACE), postcode, municipality, street and house number, name, legal form or legal situation — for example, to check which companies are registered at an address:
+
+```ts
+const { data, meta } = await cbe.companies.find({
+  zipcode: '1000',
+  street: 'Rue de la Loi',
+  houseNumber: '16',
+})
+for (const company of data) {
+  console.log(company.enterpriseNumber, company.match)
+}
+console.log(`${meta.total} companies, ${meta.creditsRemaining} credits left`)
+
+const numbers = await cbe.companies.findNumbers({
+  zipcode: '1000',
+  street: 'Rue de la Loi',
+  houseNumber: '16',
+})
+```
+
+Give at least one of `nace`, `zipcode`, `municipality`, `street` or `name`. Each result from `find` carries `match`: which unit (the registered office and/or specific establishments) met the filters. `findNumbers` takes the same filters and returns enterprise numbers only, up to 1000 per page.
+
+`find` uses 1 credit per company returned; `findNumbers` uses 1 credit per page with results. See the [API documentation](https://www.cbe2json.be/documentation?utm_source=github&utm_medium=sdk&utm_campaign=javascript_sdk) for pricing and the full filter reference.
+
 ## Credits
 
 Every result has a `meta` object:
@@ -91,7 +117,7 @@ Every result has a `meta` object:
 | `creditsResetAt`   | When your credits reset (ISO 8601) |
 | `dataUpdatedAt`    | Date of the CBE dataset served     |
 
-`companies.get` uses 1 credit. `companies.search` uses 1 credit per company returned. Errors, unknown numbers and empty searches use none.
+`companies.get` uses 1 credit. `companies.search` and `companies.find` use 1 credit per company returned. `companies.findNumbers` uses 1 credit per page with results. Errors, unknown numbers and empty searches use none.
 
 ## Error handling
 
@@ -153,7 +179,7 @@ new CBE2JSON({
 
 ## TypeScript
 
-Every type is exported: `Company`, `Establishment`, `Denomination`, `Address`, `Contact`, `Activity`, `Description`, `ResponseMeta`, `SearchMeta`, `CompanyResult`, `CompanySearchResult`, `CompanySearchParams`, `CBE2JSONOptions`.
+Every type is exported: `Company`, `Establishment`, `Denomination`, `Address`, `Contact`, `Activity`, `Description`, `ResponseMeta`, `SearchMeta`, `CompanyResult`, `CompanySearchResult`, `CompanySearchParams`, `CompanyFilters`, `CompanyFindParams`, `CompanyFindNumbersParams`, `CompanyMatch`, `FoundCompany`, `CompanyFindResult`, `CompanyNumbersResult`, `CBE2JSONOptions`.
 
 ## CommonJS
 
@@ -163,7 +189,7 @@ const { CBE2JSON } = require('@cbe2json/sdk')
 
 ## Examples
 
-[`examples/get-company.ts`](examples/get-company.ts) and [`examples/search-companies.ts`](examples/search-companies.ts).
+[`examples/get-company.ts`](examples/get-company.ts), [`examples/search-companies.ts`](examples/search-companies.ts) and [`examples/find-companies.ts`](examples/find-companies.ts).
 
 ## API documentation
 
